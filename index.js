@@ -165,7 +165,7 @@ class TagInput<T> extends React.PureComponent<Props<T>, State> {
     }
   }
 
-  componentDidUpdate(nextProps: Props<T>) {
+  getDerivedStateFromProps(nextProps: Props<T>) {
     const inputWidth = TagInput.inputWidth(
       nextProps.text,
       this.spaceLeft,
